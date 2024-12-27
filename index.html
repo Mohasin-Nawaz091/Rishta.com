@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishta.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffe6e6;
+            color: #330000;
+            scroll-behavior: smooth;
+        }
+        header, footer {
+            background-color: #800000;
+        }
+        header h1, footer p {
+            color: white;
+        }
+        .hero {
+            background: linear-gradient(to right, #990000, #ff4d4d);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            position: relative;
+        }
+        .hero::before {
+            content: '\2764\fe0f';
+            font-size: 100px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            opacity: 0.2;
+        }
+        .hero h2 {
+            font-size: 3rem;
+        }
+        .profile-card {
+            border: 1px solid #800000;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            background-color: #fff0f0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .profile-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .profile-card img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .add-profile-form {
+            margin-top: 30px;
+        }
+        .add-profile-form label {
+            color: #800000;
+        }
+        .btn-danger {
+            background-color: #990000;
+            border-color: #990000;
+        }
+        .btn-danger:hover {
+            background-color: #800000;
+        }
+        .navbar {
+            background-color: #800000;
+        }
+        .navbar-brand {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .navbar-brand:hover {
+            color: #ffcccc;
+        }
+        .nav-link {
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #ffcccc;
+        }
+        .profile-icon {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 15px;
+    cursor: pointer;
+    position: relative;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+}
+
+        .profile-icon:hover {
+            color: #ffcccc;
+        }
+        .dropdown-menu {
+            right: 0;
+            left: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Rishta.com</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <div class="dropdown">
+                            <i class="fas fa-user-circle profile-icon" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
+                                <li><a class="dropdown-item" href="signup.html">Logout</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Find Your Perfect Match</h2>
+            <p>Join thousands of happy couples today!</p>
+            <button class="btn btn-light" onclick="location.href='#rishta-list';">Get Started</button>
+
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h3>Available Rishtas</h3>
+        <div id="rishta-list" class="row">
+            
+            <div class="col-md-4">
+                <div class="profile-card text-center">
+                    <img src="./assets/20241125_220535.jpg" alt="Almeer Ayham">
+                    <h4>Almeer Ayham Khan</h4>
+                    <p>Age: 19</p>
+                    <p>Profession: Software Engineer</p>
+                    <p>City: Chitral</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="profile-card text-center">
+                    <img src="./assets/WhatsApp Image 2024-12-16 at 11.33.18_bbb9d501.jpg" alt="Mehmood Jan">
+                    <h4>Mehmood Jan</h4>
+                    <p>Age: 20</p>
+                    <p>Profession: Businessman</p>
+                    <p>City: Sawabi</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="profile-card text-center">
+                    <img src="./assets/WhatsApp Image 2024-12-18 at 12.46.25_0b1a8280.jpg" alt="Talha Faheem">
+                    <h4>Talha Faheem</h4>
+                    <p>Age: 19</p>
+                    <p>Profession: Software Engineer</p>
+                    <p>City: Peshawar</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="profile-card text-center">
+                    <img src="./assets/salman.jpg" alt="Salman">
+                    <h4>Salman</h4>
+                    <p>Age: 18</p>
+                    <p>Profession: Mern-Stacked</p>
+                    <p>City: Charsadda</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="profile-card text-center">
+                    <img src="./assets/rafey.jpg" alt="Rafey">
+                    <h4>Abdur Rafey</h4>
+                    <p>Age: 19</p>
+                    <p>Profession: Interior Designer</p>
+                    <p>City: Hayatabad</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="profile-card text-center">
+                    <img src="./assets/saleh.jpg" alt="Rafey">
+                    <h4>Muhammad Saleh</h4>
+                    <p>Age: 20</p>
+                    <p>Profession: Mern-Stacked/Backend</p>
+                    <p>City: Swat</p>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="mt-5">Add Your Profile</h4>
+        <form id="add-profile-form" class="add-profile-form">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="age" class="form-label">Age</label>
+                <input type="number" class="form-control" id="age" placeholder="Enter your age">
+            </div>
+            <div class="mb-3">
+                <label for="profession" class="form-label">Profession</label>
+                <input type="text" class="form-control" id="profession" placeholder="Enter your profession">
+            </div>
+            <div class="mb-3">
+                <label for="city" class="form-label">City</label>
+                <input type="text" class="form-control" id="city" placeholder="Enter your city">
+            </div>
+            <div class="mb-3">
+                <label for="picture" class="form-label">Profile Picture URL</label>
+                <input type="url" class="form-control" id="picture" placeholder="Enter picture URL">
+            </div>
+            <div class="mb-3">
+                <label for="file" class="form-label">Upload Picture</label>
+                <input type="file" class="form-control" id="file">
+            </div>
+            <button type="button" id="add-profile-btn" class="btn btn-danger">Add Profile</button>
+        </form>
+    </section>
+
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Rishta.com | All Rights Reserved</p>
+        <p> Developed By <b>MNA</b></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.getElementById('add-profile-btn').addEventListener('click', function() {
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const profession = document.getElementById('profession').value;
+            const city = document.getElementById('city').value;
+            const picture = document.getElementById('picture').value;
+
+            if (name && age && profession && city && picture) {
+                const profileList = document.getElementById('rishta-list');
+                const newProfile = document.createElement('div');
+                newProfile.className = 'col-md-4';
+                newProfile.innerHTML = `
+                    <div class="profile-card text-center">
+                        <img src="${picture}" alt="${name}">
+                        <h4>${name}</h4>
+                        <p>Age: ${age}</p>
+                        <p>Profession: ${profession}</p>
+                        <p>City: ${city}</p>
+                    </div>
+                `;
+                profileList.appendChild(newProfile);
+
+                document.getElementById('add-profile-form').reset();
+                alert('Profile added successfully!');
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+</body>
+</html>

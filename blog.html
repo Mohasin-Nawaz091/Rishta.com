@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Rishta.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffe6e6;
+            color: #330000;
+        }
+        header, footer {
+            background-color: #800000;
+        }
+        header h1, footer p {
+            color: white;
+        }
+        .navbar {
+            background-color: #800000;
+        }
+        .navbar-brand {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .navbar-brand:hover {
+            color: #ffcccc;
+        }
+        .nav-link {
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #ffcccc;
+        }
+        .blog-section {
+            padding: 50px 0;
+        }
+        .blog-card {
+            margin-bottom: 30px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .blog-card h5 {
+            color: #800000;
+        }
+        .blog-card a {
+            transition: background-color 0.3s;
+        }
+        .blog-card a:hover {
+            background-color: #660000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Rishta.com</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="blog-section">
+        <div class="container">
+            <h2 class="text-center">Our Blog</h2>
+            <p class="text-center">Stay updated with the latest tips, stories, and insights about matchmaking and relationships.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card blog-card">
+                        <img src="images/blog1.jpg" alt="Blog Post">
+                        <div class="card-body">
+                            <h5 class="card-title">How to Find the Perfect Match</h5>
+                            <p class="card-text">Discover key tips and strategies to find your ideal life partner. From understanding compatibility to effective communication, we cover it all!</p>
+                            <a href="#" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card blog-card">
+                        <img src="images/blog2.jpg" alt="Blog Post">
+                        <div class="card-body">
+                            <h5 class="card-title">Importance of Family in Matchmaking</h5>
+                            <p class="card-text">Learn about the crucial role family plays in traditional matchmaking and how to balance their expectations with your desires.</p>
+                            <a href="#" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card blog-card">
+                        <img src="images/blog3.jpg" alt="Blog Post">
+                        <div class="card-body">
+                            <h5 class="card-title">Modern Matchmaking Trends</h5>
+                            <p class="card-text">Explore how modern technology and cultural shifts are transforming the way people meet and marry.</p>
+                            <a href="#" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card blog-card">
+                        <img src="images/blog4.jpg" alt="Blog Post">
+                        <div class="card-body">
+                            <h5 class="card-title">Top 10 Relationship Tips</h5>
+                            <p class="card-text">These expert tips will help you nurture your relationship and create a strong foundation for the future.</p>
+                            <a href="#" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card blog-card">
+                        <img src="images/blog5.jpg" alt="Blog Post">
+                        <div class="card-body">
+                            <h5 class="card-title">Cultural Diversity in Marriage</h5>
+                            <p class="card-text">Understand how cultural differences can enrich your marriage and provide new perspectives on life.</p>
+                            <a href="#" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card blog-card">
+                        <img src="images/blog6.jpg" alt="Blog Post">
+                        <div class="card-body">
+                            <h5 class="card-title">Online Dating vs. Traditional Matchmaking</h5>
+                            <p class="card-text">Weigh the pros and cons of online dating platforms versus traditional matchmaking services.</p>
+                            <a href="#" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Rishta.com | All Rights Reserved</p>
+        <p> Developed By <b>MNA</b></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
